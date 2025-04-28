@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bandera {
+  width: 320px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 8fr;
+  grid-template-rows: 4fr 1fr 5fr;
+  background-color: #006aa7;
+  position: relative;
+}
+
+.bandera::before,
+.bandera::after {
+  content: "";
+  background-color: #fecc00;
+  z-index: 1;
+}
+
+.bandera::before {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+.bandera::after {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.volver {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.volver:hover {
+  background-color: #555;
+}
