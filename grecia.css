@@ -33,31 +33,36 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(5 * 26.5px); /* 5/9 de altura → cuadrado */
-  height: calc(5 * 26.5px);
+  width: 30%;
+  height: 55.5%;
   background-color: #0d5eaf;
   display: grid;
   place-items: center;
 }
 
+.cruz-horizontal {
+  width: 100%;
+  height: 15%;
+  top: 42.5%;
+  left: 0;
+  background-color: white;
+  position: absolute;
+}
+
+.cruz-vertical {
+  width: 15%;
+  height: 100%;
+  top: 0;
+  left: 42.5%;
+  background-color: white;
+  position: absolute;
+}
+
+
 .cruz-horizontal,
 .cruz-vertical {
   position: absolute;
   background-color: white;
-}
-
-.cruz-horizontal {
-  width: 100%; /*ancho  */
-  height: 15%;
-  top: 42.5%;
-  left: 0;
-}
-
-.cruz-vertical {
-  height: 100%;
-  width: 15%;
-  left: 42.5%;
-  top: 0;
 }
 
 .volver {
